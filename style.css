@@ -1,0 +1,126 @@
+/* Body Styling */
+body {
+    font-family: 'Dancing Script', cursive; /* Festive, elegant font */
+    background: radial-gradient(circle, #ffe4e1, #fffaf0); /* Gentle radial gradient */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Slide Container Styling */
+#slides {
+    width: 90%;
+    max-width: 900px;
+    text-align: center;
+    border: 10px solid #fbc02d; /* Bold, festive border */
+    border-radius: 20px;
+    padding: 30px;
+    background-color: #fff8e1; /* Warm background */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Drop shadow for depth */
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+/* Slide Styling */
+.slide {
+    padding: 40px 20px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+/* Headings Styling */
+h1, h2 {
+    font-family: 'Great Vibes', cursive; /* Elegant festive font */
+    color: #d84315; /* Rich, festive color */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Glowing effect */
+}
+
+h1 {
+    font-size: 3em; /* Larger for main titles */
+}
+
+h2 {
+    font-size: 2.5em; /* Slightly smaller for subtitles */
+}
+
+/* Paragraph Styling */
+p {
+    font-family: 'Open Sans', sans-serif;
+    color: #6d4c41; /* Earthy color */
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Button Styling */
+button {
+    background-color: #d84315; /* Festive red */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.4s, transform 0.3s;
+    margin: 15px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Drop shadow for buttons */
+}
+
+button:hover {
+    background-color: #bf360c;
+    transform: scale(1.05); /* Slight grow on hover */
+}
+
+/* Slide Background Colors */
+#welcome {
+    background-color: #ffe082; /* Bright, sunny background */
+}
+
+#message {
+    background-color: #ffecb3; /* Light gold background */
+}
+
+#garden-wishes {
+    background-color: #ffcc80; /* Vibrant orange background */
+}
+
+#closing {
+    background-color: #ffd54f; /* Warm yellow background */
+}
+
+/* Slide Active Class */
+.slide-active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Button Position */
+button {
+    position: fixed;
+    bottom: 20px;
+}
+
+#prev {
+    left: 30px;
+}
+
+#next {
+    right: 30px;
+}
+
+/* Fade-In-Up Animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
